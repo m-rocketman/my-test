@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  width: 800px;
+  height: 800px;
+  margin: 80px auto 0;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px repeat(4, 1fr) 50px;
+  grid-template-areas:
+    "sidebar sidebar oscar oscar oscar oscar oscar oscar oscar oscar oscar oscar"
+    "sidebar sidebar content content content content content content content content content content "
+    "sidebar sidebar content content content content content content content content content content "
+    "sidebar sidebar content content content content content content content content content content "
+    "sidebar sidebar content content content content content content content content content content "
+    ". . footer footer footer footer footer footer footer footer footer footer ";
+  grid-gap: 10px;
+}
+nav {
+  grid-area: oscar;
+  border: 1px solid slateblue;
+}
+
+aside {
+  grid-area: sidebar;
+  border: 1px solid aqua;
+}
+
+main {
+  grid-area: content;
+  border: 1px solid pink;
+}
+
+footer {
+  grid-area: footer;
+  border: 1px solid tomato;
+}
+
+@media only screen and (max-width: 780px) {
+  .container {
+    grid-template-areas:
+      "footer footer footer footer footer footer footer footer footer footer footer footer "
+      "content content content content content content content content content content content content "
+      "content content content content content content content content content content content content "
+      "content content content content content content content content content content content content "
+      "sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar sidebar "
+      "nav nav nav nav nav nav nav nav nav nav nav nav";
+  }
+}

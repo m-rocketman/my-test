@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.item {
+  background-color: goldenrod;
+  border-color: indianred;
+  text-align: center;
+}

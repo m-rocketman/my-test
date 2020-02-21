@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: burlywood;
+
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 2rem;
+}
+li {
+  margin: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#logo {
+  margin-left: 2rem;
+}
+
+img {
+  height: 100px;
+}
+
+.jude {
+  display: flex;
+}
+
+.jude div {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
